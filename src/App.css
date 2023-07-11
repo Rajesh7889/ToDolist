@@ -1,38 +1,105 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ 
+}
+.main{
+  height:99vh;
+  border:0.01px solid orangered;
+  background:linear-gradient(to right,orangered,#36d621,orangered);
+}
+.container{
+  border:0.01px solid rgb(255, 255, 255);
+  background-color: white;
+  margin-top:10vh ;
+  height:60vh;
+  width:30%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px black;
+}
+.heading{
+  height:30px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 800;
+  background:linear-gradient(to right,#36d621,orangered,#36d621);
+  color:white;
+}
+.Inputs{
+  width:98%;
+  margin-left: 1%;
+  margin-top: 20px;
+ 
+}
+input{
+  width:100%;
+  border:1px solid white;
+  border-bottom: 2px solid orangered;
+  outline: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus{
+  border-bottom: 2px solid rgb(29, 182, 8);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.save{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+  width:28px;
+  height: 28px;
+  padding:0;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:end;
+  color:white;
+  background-color: orangered;
+}
+#pls{
+  margin-bottom: 2px;
+}
+.bi{
+  color:rgb(255, 255, 255);
+  background-color: orangered;
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bi:hover{
+  background-color: red;
+}
+.list{
+  width:95%;
+  margin:15px 15px;
+  margin-right: 0;
+  font-weight: 700; 
+}
+.save:hover{
+  background-color: rgb(29, 182, 8);
+}
+.edit{
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.outr{
+  height: 350px;
+  overflow: auto;
+}
+@media(max-width:900px){
+  .container{
+    width:50%;
+  }
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width:770px){
+  .container{
+    width:70%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ 
 }
